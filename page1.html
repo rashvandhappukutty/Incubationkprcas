@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gram Post — Poster Mockup</title>
+
+  <!-- Crimson Text from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "CaslonAntiqueLocal";
+      src: url("fonts/CaslonAntique.woff2") format("woff2"),
+           url("fonts/CaslonAntique.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --parchment: url("public/images/parchment.jpg"); /* make sure parchment.jpg is in public/images */
+      --accent-color: #1a130f;
+    }
+
+    html, body {
+      margin: 0;
+      background: #ffffff; /* outer background is white */
+      font-family: "Crimson Text", Georgia, "Times New Roman", serif;
+      color: var(--accent-color);
+    }
+
+    /* parchment only in the center poster */
+    .poster {
+      width: 900px;
+      max-width: calc(100% - 48px);
+      min-height: 100vh;
+      margin: 0 auto;
+      background-image: var(--parchment);
+      background-size: cover;
+      background-position: center;
+      padding: 48px 64px 80px 64px;
+      box-sizing: border-box;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    /* Big masthead — Caslon Antique if available */
+    .masthead {
+      font-family: "CaslonAntiqueLocal", "Crimson Text", Georgia, serif;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 0.86;
+      text-align: center;
+      margin: 0 0 12px;
+    }
+
+    .vol {
+      font-family: "Crimson Text", serif;
+      font-size: 16px;
+      margin-bottom: 8px;
+      text-align: left;
+      color: #1a130f;
+    }
+
+    hr.sep {
+      border: none;
+      height: 2px;
+      background: rgba(20,16,12,0.7);
+      margin: 12px auto 18px;
+      width: 95%;
+    }
+
+    .art {
+      width: 220px;
+      margin: 10px auto 18px;
+      display: block;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-family: "Crimson Text", serif;
+      font-size: 28px;
+      text-align: center;
+      margin: 8px 0 18px;
+    }
+
+    .intro-title {
+      font-family: "CaslonAntiqueLocal", "Crimson Text", serif;
+      font-size: 46px;
+      text-align: center;
+      margin: 16px 0 18px;
+    }
+
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.65;
+      text-align: left;
+      font-family: "Crimson Text", serif;
+    }
+
+    .launch {
+      text-align: center;
+      margin-top: 34px;
+      font-family: "CaslonAntiqueLocal", "Crimson Text", serif;
+      font-size: 44px;
+    }
+
+    .sub {
+      text-align: center;
+      margin-top: 6px;
+      font-size: 20px;
+    }
+
+    @media (max-width:720px) {
+      .masthead { font-size: 58px; }
+      .intro-title { font-size: 34px; }
+      .poster { padding: 20px; }
+      .art { width: 160px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div class="vol">VOL. 1, Ed. 1</div>
+    </div>
+
+    <h1 class="masthead">Gram Post</h1>
+    <hr class="sep" />
+
+    <img class="art" src="https://media.tenor.com/ZRrzJWl1fQEAAAAC/owl-joypixels.gif" alt="ornamental owl illustration holding a scroll" />
+
+    <div class="tagline">
+      A whisper from the Incubation Nest...<br>
+      <span style="font-style:italic;">where ideas turn to fire</span>
+    </div>
+
+    <h2 class="intro-title">
+      Introducing the <span style="letter-spacing:2px">Gram Post</span>
+    </h2>
+
+    <article class="content">
+      <p><strong>Greetings, Innovators!</strong></p>
+      <p>We’re thrilled to unveil the first edition of <em>Gram Post</em>, your fortnightly dispatch from the heart of KPRCAS Incubation Nest. In each issue, we'll explore the exciting world of incubation, from the spark of an idea (Pre-Incubation) to the moment it takes off (Post-Incubation). Discover inspiring stories of budding entrepreneurs, creative solutions in action, and upcoming events designed to ignite your innovative spirit.</p>
+      <p>We’re also proud to share that KPRCAS has secured a TEDx license, paving the way for even more groundbreaking ideas to be shared. Join us on this journey of transformation and growth!</p>
+    </article>
+
+    <div class="launch">Launching August 15, 2025</div>
+    <div class="sub">From KPRCAS Incubation Hub</div>
+  </main>
+</body>
+</html>
